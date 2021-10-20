@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a57e7082016e8174eba668a3aa5e7130, type: 3}
+  m_Name: New Hun
+  m_EditorClassIdentifier: 
+  name: Pistol
+  RoF: 3
+  EquipTime: 0.3
+  damage: 10
+  Prefab: {fileID: 7940110442962532564, guid: d3356abfef9696f4f96dbab9de741577, type: 3}
+  ParticlePrefab: {fileID: 1963966267106010531, guid: 62227a5a0c858ed459709e86de91817f,
+    type: 3}
+  range: 200
+  pushForce: 300
+  PushOnImpact: 1
+  Shooting: 1
+  automatic: 0
+  Scope: 0
+  ammo: 3
+  Maxammo: 15
+  Recoil: {x: -1, y: 0, z: 0}

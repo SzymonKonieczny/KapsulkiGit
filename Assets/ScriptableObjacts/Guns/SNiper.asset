@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a57e7082016e8174eba668a3aa5e7130, type: 3}
+  m_Name: SNiper
+  m_EditorClassIdentifier: 
+  name: Sniper
+  RoF: 0.33333334
+  EquipTime: 1.3
+  damage: 100
+  Prefab: {fileID: 1808492582910734582, guid: 50d25713b72263c459323eaba29a2b7d, type: 3}
+  ParticlePrefab: {fileID: 4562493842436547284, guid: ac3a486ee57f9b64fa5140f4a62acbe4,
+    type: 3}
+  range: 300
+  pushForce: 0
+  PushOnImpact: 0
+  Shooting: 1
+  automatic: 0
+  Scope: 1
+  ammo: 6
+  Maxammo: 7
+  Recoil: {x: -5, y: 0, z: 0}
