@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EQslot : MonoBehaviour
-{   
+public class Inventory : MonoBehaviour
+{
+    public EQslot[] Items;
 
-    public void SetItem()
-    {
 
-    }
 
 }
