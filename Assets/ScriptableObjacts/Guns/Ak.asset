@@ -12,13 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57e7082016e8174eba668a3aa5e7130, type: 3}
   m_Name: Ak
   m_EditorClassIdentifier: 
-  name: Ak
-  RoF: 10
+  ITEM_TYPE: 0
   EquipTime: 0.6
-  damage: 23
   Prefab: {fileID: 8013568371531217782, guid: dcd9113bec8e2a64fa7b65c1ab42e79c, type: 3}
+  Prefab_Laying: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 4621f2615913da74399a92fa618470ab, type: 3}
+  secondary: 0
   ParticlePrefab: {fileID: 1963966267106010531, guid: 62227a5a0c858ed459709e86de91817f,
     type: 3}
+  name: Ak
+  RoF: 10
+  damage: 23
   range: 100
   pushForce: 0
   PushOnImpact: 0

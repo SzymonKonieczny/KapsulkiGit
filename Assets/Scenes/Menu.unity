@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -120,6 +120,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &113795857 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5162146865251746663, guid: 41556ebf6d81e4a4cb948cca54f84492,
+    type: 3}
+  m_PrefabInstance: {fileID: 1457392286}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2705a2e9c0e3e9842b2b60dd37e8c127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &251779148
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,25 +306,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &558790803 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7369933000453024987, guid: 41556ebf6d81e4a4cb948cca54f84492,
-    type: 3}
-  m_PrefabInstance: {fileID: 1457392286}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &558790808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558790803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0d4dbdb116132f4cbf6133280e2c121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Items: []
 --- !u!1001 &1457392286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -324,11 +317,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 7369933000453024987, guid: 41556ebf6d81e4a4cb948cca54f84492,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 478516677502982304, guid: 41556ebf6d81e4a4cb948cca54f84492,
         type: 3}
@@ -435,30 +423,42 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6562057137910213235, guid: 41556ebf6d81e4a4cb948cca54f84492,
+    - target: {fileID: 780979812797015405, guid: 41556ebf6d81e4a4cb948cca54f84492,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -5.444336
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5162146865251746663, guid: 41556ebf6d81e4a4cb948cca54f84492,
+    - target: {fileID: 780979812797015405, guid: 41556ebf6d81e4a4cb948cca54f84492,
         type: 3}
-      propertyPath: Icon
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 780979812797015405, guid: 41556ebf6d81e4a4cb948cca54f84492,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 780979812797015405, guid: 41556ebf6d81e4a4cb948cca54f84492,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1721963718}
+      objectReference: {fileID: 113795857}
+    - target: {fileID: 780979812797015405, guid: 41556ebf6d81e4a4cb948cca54f84492,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 780979812797015405, guid: 41556ebf6d81e4a4cb948cca54f84492,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 558790804, guid: 41556ebf6d81e4a4cb948cca54f84492, type: 3}
+      propertyPath: sceneViewId
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41556ebf6d81e4a4cb948cca54f84492, type: 3}
---- !u!114 &1721963718 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 54992435408701692, guid: 41556ebf6d81e4a4cb948cca54f84492,
-    type: 3}
-  m_PrefabInstance: {fileID: 1457392286}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1729974279
 GameObject:
   m_ObjectHideFlags: 0

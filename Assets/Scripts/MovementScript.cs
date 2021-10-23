@@ -28,12 +28,16 @@ public class MovementScript : MonoBehaviourPunCallbacks
     Vector3 velocity;
     float z;
     Vector3 move;
+    Inventory inventory;
     // Update is called once per frame
     private void Start()
     {
         menager = GameObject.Find("Menager").GetComponent<Menager>();
         HP = maxHP;
         HPText = GameObject.Find("Canvas/HPText").GetComponent<Text>();
+        if (!photonView.IsMine) return;
+      inventory= GameObject.Find("Canvas/Inventory").GetComponent<Inventory>();
+            inventory.LocalPlayerReference = this.gameObject;
     }
     void Update()
     {
@@ -64,7 +68,7 @@ public class MovementScript : MonoBehaviourPunCallbacks
             {
 
 
-                weapon_script.Loadout[0] =(Gun) item.item_identity;
+                    inventory.Slots[0].SetItem(item.item_identity);
                 
             }
         }
