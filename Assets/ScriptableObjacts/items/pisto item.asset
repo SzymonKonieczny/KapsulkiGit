@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be38d8807abf294cb11061d0776eadb, type: 3}
+  m_Name: pisto item
+  m_EditorClassIdentifier: 
+  ITEM_TYPE: 0
+  EquipTime: 0.1
+  Prefab: {fileID: 0}
+  Prefab_Laying: {fileID: 6559723940711955265, guid: 48e050fb89d3b26468e08b948aad2551,
+    type: 3}
+  Icon: {fileID: 0}
