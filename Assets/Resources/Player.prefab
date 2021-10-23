@@ -840,6 +840,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 2802629575091702475}
+  weapon_script: {fileID: 2802629575091702464}
+  cam: {fileID: 2802629573605208268}
+  WeapoPickMask:
+    serializedVersion: 2
+    m_Bits: 4096
   speed: 5
   SprintMultiplier: 2
   Gravity: -9.81
@@ -885,9 +890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Loadout:
-  - {fileID: 11400000, guid: 9ae0a6e3690c97f41bd705e7feb22412, type: 2}
-  - {fileID: 11400000, guid: 0446699acb3019144a25eaff932be854, type: 2}
-  - {fileID: 11400000, guid: c21bdd84c20377842af79791b7c90bfe, type: 2}
+  - {fileID: 0}
   WeaponParent: {fileID: 2802629574245888735}
   AimSpeed: 10
   BulletHolePrefab: {fileID: 3269581389411918928, guid: 2036b45780b10db47a3404b6a63eb47d,

@@ -29,7 +29,8 @@ public class Weapon : MonoBehaviourPunCallbacks
     {
         
         AmmoText = GameObject.Find("Canvas/AmmoText").GetComponent<Text>();
-        AmmoText.text = Loadout[EquipedID].ammo.ToString();
+
+        //AmmoText.text = Loadout[EquipedID].ammo.ToString();
         ScopeImage = GameObject.Find("Canvas/ZoomImg").GetComponent<Image>();
         FOV = cam.fieldOfView;
         if (!photonView.IsMine) return;
@@ -63,6 +64,7 @@ public class Weapon : MonoBehaviourPunCallbacks
     void equip(int slot)
     {
         if (CurrentWeapon != null) Destroy(CurrentWeapon);
+        if (slot >= Loadout.Length || Loadout[slot]==null) return;
         GameObject newWeapon = Instantiate(Loadout[slot].Prefab, WeaponParent.position,WeaponParent.rotation, WeaponParent);
         newWeapon.transform.localPosition = Vector3.zero;
         newWeapon.transform.localEulerAngles = Vector3.zero;

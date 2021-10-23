@@ -164,7 +164,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6559723940711955264}
-  - component: {fileID: 4102288311005080349}
+  - component: {fileID: 189506307}
+  - component: {fileID: 189506305}
   m_Layer: 12
   m_Name: Pistol
   m_TagString: Untagged
@@ -179,15 +180,31 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6559723940711955265}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.31316373, w: 0.94969916}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9211661676346170090}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4102288311005080349
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 36.5}
+--- !u!54 &189506307
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6559723940711955265}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &189506305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,11 +213,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6559723940711955265}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 009af6870e975df4d8fdce6318fdabb3, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e9bb754136bb5e45a0ec9a3f0cba15d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothe: 10
-  intensity: 1
+  item_identity: {fileID: 11400000, guid: 9ae0a6e3690c97f41bd705e7feb22412, type: 2}
 --- !u!1 &6559723941279978568
 GameObject:
   m_ObjectHideFlags: 0

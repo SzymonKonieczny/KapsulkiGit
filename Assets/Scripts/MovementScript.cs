@@ -5,8 +5,11 @@ using Photon.Pun;
 using UnityEngine.UI;
 public class MovementScript : MonoBehaviourPunCallbacks
 {
-   
+    public LayingItem item;
     public CharacterController controller;
+    public Weapon weapon_script;
+    public Camera cam;
+    public LayerMask WeapoPickMask;
     public float speed = 10;
     public float SprintMultiplier=2;
     float SprintMultiplier_with_check=1;
@@ -48,7 +51,24 @@ public class MovementScript : MonoBehaviourPunCallbacks
         move = transform.right * x + transform.forward * z;
         }
 
-       
+
+       RaycastHit hit;
+
+       if (Input.GetKeyDown(KeyCode.F))
+       { 
+            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100, WeapoPickMask))
+        {
+            
+            item = hit.transform.GetComponent<LayingItem>();
+            if (item != null)
+            {
+
+
+                weapon_script.Loadout[0] =(Gun) item.item_identity;
+                
+            }
+        }
+       }
 
             SprintMultiplier_with_check = 1;
         if (Input.GetKey(KeyCode.LeftShift) && (z>0 && x ==0))
