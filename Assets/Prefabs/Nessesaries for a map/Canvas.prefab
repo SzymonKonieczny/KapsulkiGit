@@ -541,6 +541,7 @@ MonoBehaviour:
   - {fileID: 8252581441512195668}
   InventorySlots: {fileID: 1334276366987125723}
   LocalPlayerReference: {fileID: 0}
+  weaponScript: {fileID: 0}
 --- !u!114 &558790804
 MonoBehaviour:
   m_ObjectHideFlags: 0

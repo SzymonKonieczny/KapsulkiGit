@@ -16,9 +16,11 @@ public class EQslot : MonoBehaviour
     }
     public void OnClick()
     {
+        Debug.Log("ON CLICK");
         inventory.EquipItem(item);
+       
       
     }
-    
+
 
 }

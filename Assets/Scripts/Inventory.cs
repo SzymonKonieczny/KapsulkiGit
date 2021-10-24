@@ -8,7 +8,8 @@ public class Inventory : MonoBehaviourPunCallbacks
     public EQslot[] Slots;
     public GameObject InventorySlots;
     public GameObject LocalPlayerReference; //The players MovementScript will assign the playerObj to this ref will
-
+    [SerializeField] Weapon weaponScript;
+   
     private void Update()
     {
         //if (!photonView.IsMine) return;
@@ -17,7 +18,20 @@ public class Inventory : MonoBehaviourPunCallbacks
     }
     public void EquipItem(Item item)
     {
-        LocalPlayerReference.GetComponent<Weapon>().Loadout[0] = (Gun)item;
+        weaponScript = LocalPlayerReference.GetComponent<Weapon>();
+        weaponScript.Loadout[0] = (Gun)item;
+        Debug.Log("ON CLICK2");
+        /*
+        for(int i=0; i < weaponScript.Loadout.Length; i++)
+        {
+            if(weaponScript.Loadout[i] != null)
+            {
+                weaponScript.Loadout[i] = (Gun)item;
+                Slots[i].SetItem(item);
+            }
+        }*/
+
+
     }
 
 

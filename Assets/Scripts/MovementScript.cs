@@ -67,8 +67,16 @@ public class MovementScript : MonoBehaviourPunCallbacks
             if (item != null)
             {
 
+                    foreach (EQslot s in inventory.Slots)
+                    {
+                        if(s.item==null)
+                        {
+                        s.SetItem(item.item_identity);
+                        break;
+                        }
+                        
+                    }
 
-                    inventory.Slots[0].SetItem(item.item_identity);
                 
             }
         }
