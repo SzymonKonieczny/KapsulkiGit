@@ -47,15 +47,19 @@ public class Look : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-
+         
         if (!photonView.IsMine) return;
         setY();
         setX();
-         if(!cursorlockcooldown)StartCoroutine(UpdateCursorLock());
+         if(!cursorlockcooldown && Input.GetKeyDown(KeyCode.Escape))StartCoroutine(UpdateCursorLock());
 
 
     }
     #endregion
+    public void UpdateCursorLockFromAnOutsideScript()
+    {
+        StartCoroutine(UpdateCursorLock());
+    }
     void setY()
     {
         float t_input = Input.GetAxis("Mouse Y") * ysens * Time.deltaTime;
@@ -68,7 +72,7 @@ public class Look : MonoBehaviourPunCallbacks
             weapon.localRotation = t_delta;
          }
 
-        
+       
     }
     void setX()
     {
@@ -84,13 +88,13 @@ public class Look : MonoBehaviourPunCallbacks
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            if (Input.GetKey(KeyCode.Escape)) CursorLocked = false;
+            CursorLocked = false;
         }
         else
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            if (Input.GetKey(KeyCode.Escape)) CursorLocked = true;
+            CursorLocked = true;
         }
 
         yield return new WaitForSeconds(1f);

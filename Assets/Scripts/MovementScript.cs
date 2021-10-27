@@ -67,7 +67,10 @@ public class MovementScript : MonoBehaviourPunCallbacks
             if (item != null)
             {
 
-                    foreach (EQslot s in inventory.Slots)
+
+                    inventory.AddItem(item.item_identity);
+
+                   /* foreach (EQslot s in inventory.Slots)
                     {
                         if(s.item==null)
                         {
@@ -75,10 +78,16 @@ public class MovementScript : MonoBehaviourPunCallbacks
                         break;
                         }
                         
-                    }
+                    } */
 
                 
             }
+                Debug.Log("RAyShot");
+                if (hit.transform.GetComponent<ItemCrate>()!=null)
+                {
+                    Debug.Log("RayHitACrate");
+                    hit.transform.GetComponent<ItemCrate>().Open();
+                }
         }
        }
 
