@@ -13,8 +13,10 @@ public class ItemCrate : MonoBehaviour
         for(int i = 0; i < 3; i++)
         {
             GameObject obj = Instantiate(item.Prefab_Laying);
+            //GameObject obj = PhotonNetwork.Instantiate(Player_Prefab, SpawnPoint.position, SpawnPoint.rotation);
             obj.transform.position = transform.position;
             obj.GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(1, 5), Random.Range(1, 5), Random.Range(1, 50)));
+
         }
 
     }

@@ -16,7 +16,7 @@ public class EQslot : MonoBehaviour
     }
     public void OnClick()
     {
-        Debug.Log("ON CLICK");
+        Debug.LogWarning("ON CLICK");
         inventory.EquipItem(item);
        
       
