@@ -4103,6 +4103,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 558790804, guid: 41556ebf6d81e4a4cb948cca54f84492, type: 3}
+      propertyPath: sceneViewId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3411512690116445824, guid: 41556ebf6d81e4a4cb948cca54f84492,
         type: 3}
       propertyPath: m_IsActive

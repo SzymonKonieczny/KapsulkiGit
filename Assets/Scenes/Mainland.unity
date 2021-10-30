@@ -3595,6 +3595,31 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3411512690116445824, guid: 41556ebf6d81e4a4cb948cca54f84492,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259965957590326504, guid: 41556ebf6d81e4a4cb948cca54f84492,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259965957590326504, guid: 41556ebf6d81e4a4cb948cca54f84492,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259965957590326504, guid: 41556ebf6d81e4a4cb948cca54f84492,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2625769417683041072, guid: 41556ebf6d81e4a4cb948cca54f84492,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41556ebf6d81e4a4cb948cca54f84492, type: 3}
 --- !u!1001 &1553433690
