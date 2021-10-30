@@ -69,16 +69,7 @@ public class MovementScript : MonoBehaviourPunCallbacks
 
 
                     inventory.AddItem(item.item_identity);
-
-                   /* foreach (EQslot s in inventory.Slots)
-                    {
-                        if(s.item==null)
-                        {
-                        s.SetItem(item.item_identity);
-                        break;
-                        }
-                        
-                    } */
+                    item.Destroy_me();
 
                 
             }
