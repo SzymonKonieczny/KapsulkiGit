@@ -10,7 +10,7 @@ public class ItemCrate : MonoBehaviour
 
     public void Open()
     {
-        for(int i = 0; i < 3; i++)
+        for(int i = 0; i < 1; i++)
         {
             GameObject obj = Instantiate(item.Prefab_Laying);
             //GameObject obj = PhotonNetwork.Instantiate(Player_Prefab, SpawnPoint.position, SpawnPoint.rotation);
